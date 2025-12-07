@@ -1,0 +1,125 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+
+
+.background-section {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;  
+    z-index: -1;   
+    display: flex;
+    overflow: hidden;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    filter: brightness(0.8);
+}
+
+.campus-map-container {
+    position: relative;
+    width: 1000px; 
+    height: 700px; 
+    overflow: hidden;
+}
+
+
+.map-title {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    z-index: 10; 
+}
+
+.building {
+    position: absolute;
+    display: block;
+}
+
+.building img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+
+#building1 { /* 50주년 */
+    top: 100px; 
+    left: 1000px; 
+    z-index: 1;
+}
+
+#building2 { /* 인사관 */
+    top: 100px;
+    left: 650px;
+    z-index: 2;
+}
+
+#building3 { /*대강당 */
+    top: 480px; 
+    left: 800px;
+    z-index: 3;
+}
+
+#building4 { /*누리관 */
+    top: 400px;
+    left: 550px;
+    z-index: 4;
+}
+
+#building5 { /* 도서관 */
+    top: 330px;
+    left: 670px;
+    z-index: 5;
+}
+
+#building6 { /*과학관2 */
+    top: 320px;
+    left: 480px;
+    z-index: 6;
+}
+
+#building7 { /* 조예관 */
+    top: 170px;
+    left: 500px;
+    z-index: 7;
+}
+
+#building8 { /*과학관1 */
+    top: 450px; 
+    left: 400px;
+    z-index: 8; 
+}
+
+
+
+
+footer {
+    text-align: center;
+    position: fixed; 
+    bottom: 0;
+    color: #fff; 
+}
+
+
+.building img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
